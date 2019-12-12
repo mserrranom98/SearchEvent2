@@ -13,6 +13,11 @@ import {AngularFireAuthModule} from '@angular/fire/auth';
 import {SharedModule} from './shared/shared.module';
 import {AuthGuardService} from './shared/services/auth/auth-guard.service';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {ReactiveFormsModule} from '@angular/forms';
+import {NbChatModule, NbLayoutModule, NbThemeModule} from '@nebular/theme';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {NbEvaIconsModule} from '@nebular/eva-icons';
+import {MatStepperModule} from '@angular/material';
 
 firebase.initializeApp(environment.firebase);
 
@@ -27,8 +32,18 @@ firebase.initializeApp(environment.firebase);
     BrowserModule,
     AppRoutingModule,
     SharedModule,
+    ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
+    AngularFireAuthModule,
+    NbThemeModule.forRoot(),
+    NbChatModule.forRoot({ messageGoogleMapKey: 'MAP_KEY' }),
+    BrowserAnimationsModule,
+    NbThemeModule.forRoot({ name: 'default' }),
+    NbLayoutModule,
+    NbEvaIconsModule,
+    BrowserAnimationsModule,
+    MatStepperModule,
     AngularFireAuthModule
   ],
   providers: [
