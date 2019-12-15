@@ -3,7 +3,14 @@ import { CommonModule } from '@angular/common';
 
 import { EventosRoutingModule } from './eventos-routing.module';
 import { ConsultaComponent } from './consulta/consulta.component';
-import {DxButtonModule, DxGalleryModule, DxNavBarModule} from "devextreme-angular";
+import {
+  DxButtonModule,
+  DxGalleryModule,
+  DxListModule,
+  DxMapModule,
+  DxNavBarModule,
+  DxTileViewModule
+} from "devextreme-angular";
 
 
 @NgModule({
@@ -11,7 +18,11 @@ import {DxButtonModule, DxGalleryModule, DxNavBarModule} from "devextreme-angula
   imports: [
     CommonModule,
     EventosRoutingModule,
-    DxNavBarModule
+    DxTileViewModule,
+    DxButtonModule,
+    DxGalleryModule,
+    DxMapModule,
+    DxListModule
   ]
 })
 export class EventosModule { }
