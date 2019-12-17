@@ -11,10 +11,11 @@ import {
   DxNavBarModule,
   DxTileViewModule
 } from "devextreme-angular";
+import { DetalleComponent } from './detalle/detalle.component';
 
 
 @NgModule({
-  declarations: [ConsultaComponent],
+  declarations: [ConsultaComponent, DetalleComponent],
   imports: [
     CommonModule,
     EventosRoutingModule,
