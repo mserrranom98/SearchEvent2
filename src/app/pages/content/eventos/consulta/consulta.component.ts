@@ -24,7 +24,7 @@ export class ConsultaComponent implements OnInit {
     }, {
       FileName: '2.jpg'
     }, {
-      FileName: '2.jpg',
+      FileName: '3.jpg',
       widthRatio: 2,
       heightRatio: 2
     }, {
@@ -1467,6 +1467,7 @@ export class ConsultaComponent implements OnInit {
   }];
 
   listSelectionChanged = (e) => {
+    console.log(e);
     this.currentHotel = e.addedItems[0];
   }
 
