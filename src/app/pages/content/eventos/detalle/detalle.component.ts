@@ -249,10 +249,10 @@ export class DetalleComponent implements OnInit {
     priority: '<img src="https://s3.amazonaws.com/static.khipu.com/buttons/2015/50x25-purple.png">'
   }, {
     subject: "Non-Compete Agreements",
-    priority: "Low"
+    priority: '../assets/img/flow.png'
   }, {
     subject: "Comment on Revenue Projections",
-    priority: "Normal"
+    priority: '../assets/img/web.png'
   }];
 
   markerUrl = 'https://js.devexpress.com/Demos/RealtorApp/images/map-marker.png';

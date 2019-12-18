@@ -9,7 +9,12 @@
     [loop]="true"
     [showNavButtons]="true"
     [showIndicator]="true">
-  </dx-gallery>
+  </dx-gallery><br><br>
+  <div class="row">
+    <div class="update ml-auto mr-auto">
+      <button type="submit" class="btn btn-warning btn-round" (click)="Ver()">Enviar sugerencia</button>
+    </div>
+  </div><br>
   <div id="employee">
     <p>
       Fecha: <b>{{employeeInfo.Fecha}}</b>
@@ -112,7 +117,7 @@
   </div>
   <div class="dx-fieldset">
     <div class="dx-field">
-      <div class="dx-field-label">Default mode</div>
+      <div class="dx-field-label">Seleccione medio de pago</div>
       <div class="dx-field-value">
         <dx-radio-group
           [items]="priorities"
@@ -121,4 +126,28 @@
       </div>
     </div>
   </div>
+  <div class="row">
+    <div class="update ml-auto mr-auto">
+      <button type="submit" class="btn btn-warning btn-round" (click)="Ver()">Comprar</button>
+    </div>
+  </div><br>
+</div>
+<div class="div-table">
+  <div class="Iencabezado">
+    Sugerencia
+  </div><br>
+  <dx-form id="form"
+           [formData]="employee">
+    <dxi-item itemType="group" cssClass="first-group" [colCount]="4">
+      <dxi-item itemType="group" [colSpan]="3">
+        <dxi-item dataField="Asunto"></dxi-item>
+        <dxi-item dataField="Descripcion" [colSpan]="2" editorType="dxTextArea" [editorOptions]="{ height: 140 }"></dxi-item>
+      </dxi-item>
+    </dxi-item>
+  </dx-form>
+  <div class="row">
+    <div class="update ml-auto mr-auto">
+      <button type="submit" class="btn btn-warning btn-round" (click)="Ver()">Enviar</button>
+    </div>
+  </div><br>
 </div>

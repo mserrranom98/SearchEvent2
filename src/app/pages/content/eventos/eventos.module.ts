@@ -5,10 +5,10 @@ import { EventosRoutingModule } from './eventos-routing.module';
 import { ConsultaComponent } from './consulta/consulta.component';
 import {
   DxAccordionModule,
-  DxButtonModule, DxCheckBoxModule,
+  DxButtonModule, DxCheckBoxModule, DxFormModule,
   DxGalleryModule,
   DxListModule,
-  DxMapModule, DxNumberBoxModule, DxRadioGroupModule,
+  DxMapModule, DxNumberBoxModule, DxRadioGroupModule, DxTextAreaModule,
   DxTileViewModule
 } from "devextreme-angular";
 import { DetalleComponent } from './detalle/detalle.component';
@@ -26,6 +26,8 @@ import { DetalleComponent } from './detalle/detalle.component';
     DxButtonModule,
     DxGalleryModule,
     DxNumberBoxModule,
+    DxFormModule,
+    DxTextAreaModule,
     DxCheckBoxModule,
     DxListModule,
     DxRadioGroupModule
