@@ -4,11 +4,11 @@ import { CommonModule } from '@angular/common';
 import { EventosRoutingModule } from './eventos-routing.module';
 import { ConsultaComponent } from './consulta/consulta.component';
 import {
-  DxButtonModule,
+  DxAccordionModule,
+  DxButtonModule, DxCheckBoxModule,
   DxGalleryModule,
   DxListModule,
-  DxMapModule,
-  DxNavBarModule,
+  DxMapModule, DxNumberBoxModule, DxRadioGroupModule,
   DxTileViewModule
 } from "devextreme-angular";
 import { DetalleComponent } from './detalle/detalle.component';
@@ -23,7 +23,12 @@ import { DetalleComponent } from './detalle/detalle.component';
     DxButtonModule,
     DxGalleryModule,
     DxMapModule,
-    DxListModule
+    DxButtonModule,
+    DxGalleryModule,
+    DxNumberBoxModule,
+    DxCheckBoxModule,
+    DxListModule,
+    DxRadioGroupModule
   ]
 })
 export class EventosModule { }

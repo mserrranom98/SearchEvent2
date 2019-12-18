@@ -1,1 +1,124 @@
-<p>detalle works!</p>
+<div class="div-table">
+  <div class="Iencabezado">
+    Detalle del evento
+  </div><br>
+  <dx-gallery
+    [dataSource]="House"
+    [height]="440"
+    width="100%"
+    [loop]="true"
+    [showNavButtons]="true"
+    [showIndicator]="true">
+  </dx-gallery>
+  <div id="employee">
+    <p>
+      Fecha: <b>{{employeeInfo.Fecha}}</b>
+    </p>
+    <p class="address">
+      Entradas:<br />
+      <span>{{employeeInfo.Entrada}}</span>:
+      <span>{{employeeInfo.Valor}}</span><br />
+      <span>{{employeeInfo.Entrada2}}</span>:
+      <span>{{employeeInfo.Valor2}}</span>
+    </p>
+    <p>
+      Direccion:
+      <b>{{employeeInfo.Direccion}}</b><br/></p>
+    <hr>
+    <p>
+      Descripcion: <b>{{employeeInfo.Descripcion}}</b>
+    </p>
+    <hr>
+    <div class="Iencabezado">
+      Ubicacion
+    </div><br>
+  </div>
+  <dx-map
+    provider="bing"
+    [zoom]="11"
+    [height]="440"
+    width="100%"
+    [controls]="true"
+    [markerIconSrc]="markerUrl"
+    [markers]="markers"
+  >
+  </dx-map>
+
+  <div class="row">
+    <div class="update ml-auto mr-auto">
+      <button type="submit" class="btn btn-warning btn-round" (click)="Ver()">Entradas</button>
+    </div>
+  </div><br>
+</div>
+
+<div class="div-table">
+  <div class="options">
+    <div class="option">
+      <dx-check-box
+        text="VIP"
+        [(value)]="allowDeleting">
+      </dx-check-box>
+    </div><br>
+    <div class="option">
+      <span>Precio:</span>
+      <dx-number-box
+        [max]="550"
+        [disabled]="true"
+        [(value)]="width"></dx-number-box>
+      <span>Seleccione cantidad:</span>
+      <dx-number-box
+        [max]="550"
+        [(value)]="width"></dx-number-box>
+    </div><br>
+    <div class="option">
+      <dx-check-box
+        text="Galeria"
+        [(value)]="allowDeleting">
+      </dx-check-box>
+    </div><br>
+    <div class="option">
+      <span>Precio:</span>
+      <dx-number-box
+        [max]="550"
+        [disabled]="true"
+        [(value)]="width"></dx-number-box>
+      <span>Seleccione cantidad:</span>
+      <dx-number-box
+        [max]="550"
+        [(value)]="width"></dx-number-box>
+    </div><br>
+    <div class="option">
+      <dx-check-box
+        text="Platea"
+        [(value)]="allowDeleting">
+      </dx-check-box>
+    </div><br>
+    <div class="option">
+      <span>Precio:</span>
+      <dx-number-box
+        [max]="550"
+        [disabled]="true"
+        [(value)]="width"></dx-number-box>
+      <span>Seleccione cantidad:</span>
+      <dx-number-box
+        [max]="550"
+        [(value)]="width"></dx-number-box>
+    </div><br>
+    <span>Total:</span>
+    <dx-number-box
+      [max]="550"
+      [disabled]="true"
+      [(value)]="width"></dx-number-box>
+  </div>
+  <div class="dx-fieldset">
+    <div class="dx-field">
+      <div class="dx-field-label">Default mode</div>
+      <div class="dx-field-value">
+        <dx-radio-group
+          [items]="priorities"
+          [value]="priorities[0]">
+        </dx-radio-group>
+      </div>
+    </div>
+  </div>
+</div>

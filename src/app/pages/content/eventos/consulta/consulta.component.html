@@ -20,59 +20,5 @@
       </div>
     </dx-list>
 
-<div class="div-table">
-    <div class="Iencabezado">
-      Detalle del evento
-    </div><br>
-    <dx-gallery
-      [dataSource]="House"
-      [height]="440"
-      width="100%"
-      [loop]="true"
-      [showNavButtons]="true"
-      [showIndicator]="true">
-    </dx-gallery>
-  <div id="employee">
-    <p>
-      Fecha: <b>{{employeeInfo.Birth_Date}}</b>
-    </p>
-    <p class="address">
-      Direccion:<br />
-      <b>{{employeeInfo.City}}</b><br />
-      <span>{{employeeInfo.Zipcode}}</span>
-      <span>{{employeeInfo.Address}}</span>
-    </p>
-    <p>
-      Entradas:
-      <b>{{employeeInfo.Mobile_Phone}}</b><br/></p>
-    <hr>
-    <p>
-      Descripcion: <b>{{employeeInfo.Email}}</b>
-    </p>
-    <hr>
-    <div class="Iencabezado">
-      Ubicacion
-    </div><br>
-  </div>
-    <dx-map
-      provider="bing"
-      [zoom]="11"
-      [height]="440"
-      width="100%"
-      [controls]="true"
-      [markerIconSrc]="markerUrl"
-      [markers]="markers"
-    >
-    </dx-map>
 
-  <div class="row">
-    <div class="update ml-auto mr-auto">
-      <button type="submit" class="btn btn-warning btn-round" (click)="Ver()">Entradas</button>
-    </div>
-  </div><br>
-  </div>
-
-<div class="div-table">
-
-</div>
 
