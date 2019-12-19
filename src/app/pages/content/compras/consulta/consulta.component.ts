@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import DataSource from "devextreme/data/data_source";
-import ArrayStore from "devextreme/data/array_store";
+import DataSource from 'devextreme/data/data_source';
+import ArrayStore from 'devextreme/data/array_store';
 
 @Component({
   selector: 'app-consulta',
   templateUrl: './consulta.component.html',
-  styleUrls: ['./consulta.component.css']
 })
 export class ConsultaComponent implements OnInit {
+
   currentHotel: any;
 
   Hotel = [
@@ -16,7 +16,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'Hamburg Suites',
       Address: 'An Der Alster 82',
       Postal_Code: '20099',
-      Description: 'Only a few hundred meters from the city center, enjoy the energy of Hamburg each and every night of your stay in our hotel. We are currently renovating some of our guest rooms so that we can serve you better. Welcome to Hamburg and enjoy your stay.',
       Hotel_Class: 'Diamond',
       City: 'Hamburg',
       Price: 299,
@@ -43,7 +42,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'The Stanadard Resort',
       Address: 'Steindamm 99',
       Postal_Code: '20359',
-      Description: 'At the Standard, there is nothing we won\'t do to make our guests feel at home. Our rooms offer the very best quality furnishings. Our restaurants serve the best foods and our bar has the largest collection of German beers in Europe. See you soon.',
       Hotel_Class: 'Platinum',
       City: 'Hamburg',
       Price: 399,
@@ -70,7 +68,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'The Park Hotel',
       Address: 'Borstelmannsweg 82',
       Postal_Code: '20537',
-      Description: 'The Park remains the go to address for those travelling to the beautiful city of Hamburg. It\'s where both old and new merge into a single experience. We are currently offering special rates for frequent travellers to our hotel. Call us and book your room.',
       Hotel_Class: 'Gold',
       City: 'Hamburg',
       Price: 289,
@@ -97,7 +94,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'Honolulu Inn',
       Address: '822 Mauna Loa Rd',
       Postal_Code: '96801',
-      Description: 'Sun, sand and tropical breezes await you at the Honolulu Inn. Just 2 miles from the world famous Waikiki Beach, the hotel is nearby the famous Kona shopping center. We\'ll do everything we can to make your stay with us memorable.',
       Hotel_Class: 'Gold',
       City: 'Honolulu',
       Price: 111,
@@ -124,7 +120,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'Waikiki Beach Hotel',
       Address: '800 Waikiki Beach Rd',
       Postal_Code: '96801',
-      Description: 'Situated directly on Waikiki Beach you are 100 yards away from the fun that awaits you whenever you visit Honolulu. The hotel offers free shuttle service from Honolulu International Airport and we provide you with free towels when using our pool.',
       Hotel_Class: 'Diamond',
       City: 'Honolulu',
       Price: 399,
@@ -151,7 +146,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'Waikiki Suites',
       Address: '900 Waikiki Beach Rd',
       Postal_Code: '96801',
-      Description: 'The only all suite hotel on Waikiki Beach. Enjoy panoramic views of the Pacific and world famous Diamond Head Crater. Visit our popular health spa for a relaxing day of pampering from our world renowned spa technicians. We look forward to your visit.',
       Hotel_Class: 'Platinum',
       City: 'Honolulu',
       Price: 399,
@@ -178,7 +172,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'White Sand Resort',
       Address: '543 Sandy Beach Rd.',
       Postal_Code: '96801',
-      Description: 'A resort of uncompromising beauty. Lush landscaping will make you feel like you are in the heart of old Hawaii. The largest pool in Honolulu offers 3 different water slides to keep your kids busy while you enjoy our grand spa. See you soon at the Sand.',
       Hotel_Class: 'Platinum',
       City: 'Honolulu',
       Price: 499,
@@ -205,7 +198,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'Sandpiper Hotel',
       Address: '424 Sand Hill Rd',
       Postal_Code: '96801',
-      Description: 'Built to amaze, the Sandpiper Hotel includes a 100 million dollar art collection, manicured lawns and gardens and an adult only pool. For kids, we offer all day camps and tours of old Hawaiian towns on the North Shore. Our hotel is simply the best.',
       Hotel_Class: 'Diamond',
       City: 'Honolulu',
       Price: 599,
@@ -232,7 +224,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'Grand Gold Resort',
       Address: '123 Las Vegas Blvd.',
       Postal_Code: '89120',
-      Description: 'A gorgeous resort in the heart of Las Vegas. Enjoy our 50,000 gallon pool in the summer and dine at one of our 10 highly rated restaurants. We even give away free casino chips so you can leave Las Vegas a winner. There is nothing like Grand Gold.',
       Hotel_Class: 'Platinum',
       City: 'Las Vegas',
       Price: 90,
@@ -259,7 +250,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'Desert Sun Resort',
       Address: '47 Las Vegas Blvd.',
       Postal_Code: '89119',
-      Description: 'Created by renowned architect John Biltmore, the Desert Sun Resort is the newest Resort hotel in Las Vegas and offers its guests the very best rooms, dining and gaming options. You will never want to stay at another resort once you\'ve experienced it.',
       Hotel_Class: 'Platinum',
       City: 'Las Vegas',
       Price: 105,
@@ -286,7 +276,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'Casino World Resort',
       Address: '28 Sunset Drive',
       Postal_Code: '89120',
-      Description: 'The ultimate casino in Las Vegas. Based on your play, we comp rooms, food and airfare. You will love the newly renovated rooms and the focus on the well-being of our guests. The pool includes a slide for children so you can gamble in peace.',
       Hotel_Class: 'Diamond',
       City: 'Las Vegas',
       Price: 211,
@@ -313,7 +302,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'Paradise Resort',
       Address: '524 Paradise Road',
       Postal_Code: '89120',
-      Description: 'Constructed in 2012, the Paradise is the pinnacle of elegance and fun. Enjoy our 50,000 gallon pool or our 150,000 square foot casino. We have more games than any other casino in Las Vegas. Come join us next time you are in town. We\'ll treat you well.',
       Hotel_Class: 'Platinum',
       City: 'Las Vegas',
       Price: 299,
@@ -340,7 +328,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'Sun World Hotel',
       Address: '1000 Las Vegas Blvd.',
       Postal_Code: '89119',
-      Description: 'Enjoy the warmth of Las Vegas in our amazing hotel. Swim in our beautiful pool, gamble in our comfortable casino and dine in our amazing restaurants. Once you feel the Sun World difference, you will never stay at another Las Vegas Hotel again.',
       Hotel_Class: 'Gold',
       City: 'Las Vegas',
       Price: 149,
@@ -367,7 +354,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'Metropolis Hotel',
       Address: '822 Edgware Rd',
       Postal_Code: 'W2 4AD',
-      Description: 'At the Metropolis, you will be welcomed by the most professional hotel staff in the city of London. We take great pride in making certain that all of our guests are lavished while staying in the most famous city on earth. Welcome to the Metropolis.',
       Hotel_Class: 'Diamond',
       City: 'London',
       Price: 379,
@@ -394,7 +380,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'Royal Grande Hotel',
       Address: '99 Garden Park',
       Postal_Code: 'W2 3JP',
-      Description: 'The Royal Grande is the ultimate in luxury. From Kings to Queens, our hotel has hosted the very rich and very famous throughout its amazing history. Our staff will help you enjoy your time in the city of London and we\'ll work hard to earn your business.',
       Hotel_Class: 'Platinum',
       City: 'London',
       Price: 449,
@@ -421,7 +406,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'Palace Hotel',
       Address: '537 Southwark',
       Postal_Code: 'SE1 9HH',
-      Description: 'The epitome of luxury, the Palace is near all the famous landmarks in the city of London and minutes away from the best shopping in Europe. If you love to be lavished by an amazing staff and want the best guest rooms, then the Palace is the place for you.',
       Hotel_Class: 'Platinum',
       City: 'London',
       Price: 389,
@@ -448,7 +432,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'Downtown Inn',
       Address: '528 Pico Blvd.',
       Postal_Code: '90012',
-      Description: 'In the heart of LA\'s business district, the Downtown Inn has a welcoming staff and award winning restaurants that remain open 24 hours a day. Use our conference room facilities to conduct meetings and have a drink at our beautiful rooftop bar.',
       Hotel_Class: 'Diamond',
       City: 'Los Angeles',
       Price: 199,
@@ -475,7 +458,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'Reef Resort',
       Address: '1 Reef Coast Street',
       Postal_Code: '0002',
-      Description: 'A premier destination for the rich and famous, the Reef Resort offers you luxuries not found at any other resort in the Bahamas. Our pool inclues 6 super slides so your children can enjoy themselves from morning to night. Join us and have fun.',
       Hotel_Class: 'Diamond',
       City: 'Nassau',
       Price: 399,
@@ -502,7 +484,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'Nassau Beach Hotel',
       Address: '34 Coast Hwy',
       Postal_Code: '0003',
-      Description: 'Who does not love an oceanfront hotel? At the Nassau Beach you\'ll be minutes away from the warm Atlantic and you\'ll have views of the bay and some of the most beautiful boats on this planet. Yes, the Nassau Beach is the place to be if you love boating.',
       Hotel_Class: 'Diamond',
       City: 'Nassau',
       Price: 299,
@@ -527,7 +508,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'Sandybridge Inn',
       Address: '58 Bridge Road',
       Postal_Code: '0004',
-      Description: 'Low prices does not mean bad service or unkept rooms. At the Sandybridge, we make your stay enjoyable with an uncompromising commitment to affordable services without all the fuss so common with high-priced hotels on the island. Come join us.',
       Hotel_Class: 'Gold',
       City: 'Nassau',
       Price: 249,
@@ -554,7 +534,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'Colonial House',
       Address: '8 Old City Dr',
       Postal_Code: '0004',
-      Description: 'The Colonial House is consistently voted best hotel in the Bahamas. Our guests know that we will do everything we can to make your stay a memorable one. Note: Our pool is undergoing renovations throughout this year so please plan accordingly.',
       Hotel_Class: 'Diamond',
       City: 'Nassau',
       Price: 379,
@@ -581,7 +560,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'SoHo Inn',
       Address: '82 Houston St',
       Postal_Code: '10001',
-      Description: 'The trendiest hotel in NYC. If you love SOHO, you are going to love staying at our hotel. You\'ll be in the heart of all of the action and a short subway ride to the everything NYC has to offer to visitors. Hotel is currently undergoing a renovation.',
       Hotel_Class: 'Diamond',
       City: 'New York',
       Price: 299,
@@ -608,7 +586,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'NoHo Hotel',
       Address: '99 Houston St',
       Postal_Code: '10001',
-      Description: 'Some say that NOHO is the best area in Manhattan and who are we to disagree. Our hotel caters to the rich and famous and the not so rich and not so famous. We will do everything we can to make your stay memorable, fun and exciting.',
       Hotel_Class: 'Gold',
       City: 'New York',
       Price: 199,
@@ -635,7 +612,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'Broadway Suites',
       Address: '887 Broadway',
       Postal_Code: '10002',
-      Description: 'The lights of broadway. The excitement of Times Square. The energy of New York. You are a short walk away from Broadway and Times Square. Discounted show tickets are available from our concierge 7 days a week. Don’t forget our new restaurants.',
       Hotel_Class: 'Gold',
       City: 'New York',
       Price: 119,
@@ -662,7 +638,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'NY Convention Hotel',
       Address: '288 6th Ave',
       Postal_Code: '10002',
-      Description: 'The premier location for business conventions in New York City. With 500,000 square feet of convention space, we can host any event for any organization. Our rooms are spotless and our staff is extremely knowledgeable about the hidden gems of the city.',
       Hotel_Class: 'Diamond',
       City: 'New York',
       Price: 299,
@@ -689,7 +664,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'Central Park Suites',
       Address: '900 Park Ave',
       Postal_Code: '10003',
-      Description: 'Wake up, open your windows and take in a refreshing view of Central Park. We recently renovated all public areas of our hotel and world famous chef Johnny James will be opening his new restaurant within the next two months. Join us and have a great time.',
       Hotel_Class: 'Diamond',
       City: 'New York',
       Price: 219,
@@ -716,7 +690,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'Wall St Hotel',
       Address: '882 Battery Street',
       Postal_Code: '10005',
-      Description: 'Business means Wall Street and the best hotel in the district is the Wall St. Hotel. We have special weekend rates for visitors who want to stay close to Battery Park. During the week, our rates are very competitive and we  offer free internet access.',
       Hotel_Class: 'Gold',
       City: 'New York',
       Price: 249,
@@ -743,7 +716,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'The Grand Hotel',
       Address: '100 Park Ave',
       Postal_Code: '10002',
-      Description: 'Like the name implies, the Grand Hotel is simply grand. We recently purchased a Picasso painting for 50 million dollars, adding to our already famous art collection. Our rooms now offer the heaven bed and bedding, so you can sleep in luxury every night.',
       Hotel_Class: 'Platinum',
       City: 'New York',
       Price: 399,
@@ -770,7 +742,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'The Americas Hotel',
       Address: '938 Ave of Americas',
       Postal_Code: '10003',
-      Description: 'Directly across from the United Nations, the Americas Hotel has hosted politicians from throughout the world. Meet and greet the most powerful men and women in the world and find out why we are consistently voted the best hotel on the east side.',
       Hotel_Class: 'Diamond',
       City: 'New York',
       Price: 299,
@@ -797,7 +768,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'Hotel de Paris',
       Address: '49 Rue Pierre Charron',
       Postal_Code: '75008',
-      Description: 'The magnificant city of Paris like you\'ve never experienced it before. Get ready for the time of your life with the world\'s best dining and shopping options. Get ready for the time of your life with the world\'s best hotel staff ready to help you anytime.',
       Hotel_Class: 'Platinum',
       City: 'Paris',
       Price: 399,
@@ -824,7 +794,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'Champs Elysees Hotel',
       Address: '1 Champs Elysees',
       Postal_Code: '75008',
-      Description: 'The most famous boulevard in the world meets the most luxurious hotel in the world. Minutes away from the Eiffel Tower and the Seine River, enjoy unmatched service and pampering at the Champs Elyesees Hotel.  Kids are welcome and we are pet friendly.',
       Hotel_Class: 'Platinum',
       City: 'Paris',
       Price: 399,
@@ -851,7 +820,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'The Hermitage',
       Address: '44 Rue Beaujon',
       Postal_Code: '75008',
-      Description: 'The queen of hotels in the city of Paris, the Hermitage is currently under-going major renovations for a grand re-opening in 2016. We currently have a limited number of rooms available and they have been discounted during the renovation phase.',
       Hotel_Class: 'Diamond',
       City: 'Paris',
       Price: 299,
@@ -878,7 +846,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'Opera Hotel',
       Address: '77 Blvd Haussmann',
       Postal_Code: '75009',
-      Description: 'Situated near the world famous Paris Opera and countless other Paris landmarks, the Opera Hotel will astound you with its attentive and knowledgeable staff, immaculate guest rooms and amazing décor. We look forward to serving your needs soon.',
       Hotel_Class: 'Diamond',
       City: 'Paris',
       Price: 399,
@@ -905,7 +872,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'Hotel Roma',
       Address: 'Via Roma 427',
       Postal_Code: '00185',
-      Description: 'In the center of Rome, the Hotel Roma is a blend of old and new. Our gardens will take you back in time and our service will remind you how great life can be. We want to make your stay with us the best experience of your life. We love our guests.',
       Hotel_Class: 'Platinum',
       City: 'Rome',
       Price: 299,
@@ -932,7 +898,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'The International Inn',
       Address: 'Via Nazionale 28',
       Postal_Code: '00184',
-      Description: 'Just as the name implies, the International is the hotel of choice for travellers from all around the world. Centrally located to all the sights and sounds of the great city of Rome, you will feel like you are in paradise whenever you stay with us.',
       Hotel_Class: 'Diamond',
       City: 'Rome',
       Price: 279,
@@ -959,7 +924,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'The Colosseum Inn',
       Address: 'Via Sforza 99',
       Postal_Code: '00184',
-      Description: 'The most beautiful hotel in Rome. You will feel warm and comfortable the minute you step into our grand lobby. We are prepared to do everything we can to make your stay in Rome a pleasurable one. Nothing compares to the Colosseum.',
       Hotel_Class: 'Diamond',
       City: 'Rome',
       Price: 299,
@@ -986,7 +950,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'The Bay Hotel',
       Address: '1 Fishermans Rd',
       Postal_Code: '94105',
-      Description: 'Located at the Fisherman\'s Wharf, the Bay Hotel will lavish you in luxury and allow you to experience all the sights and sounds of San Francisco. Our world-class restaurants serve the freshest seafood. Come join us at The Bay Hotel…it will be our pleasure',
       Hotel_Class: 'Diamond',
       City: 'San Francisco',
       Price: 299,
@@ -1013,7 +976,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'Golden Suites',
       Address: '14 Golden Gate Blvd',
       Postal_Code: '94014',
-      Description: 'Overlooking the amazing Golden Gate Bridge, the Golden Suites welcomes its guests with free bottled water upon check-in and a coupon for a free trip to Alcatraz Island. We will do everything we can to make your stay a positive one.',
       Hotel_Class: 'Diamond',
       City: 'San Francisco',
       Price: 599,
@@ -1040,7 +1002,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'Metropolitan Hotel',
       Address: '378 Green St.',
       Postal_Code: '94102',
-      Description: 'Luxury has been re-defnied at the Met. A $0 milllion dollar renovation in 2011 upgraded all guest rooms to include state of the art technology and the finest quality furnishings. Our hotel offers 3 indoor pools and the largest health club in the city.',
       Hotel_Class: 'Platinum',
       City: 'San Francisco',
       Price: 599,
@@ -1067,7 +1028,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'Residence Suites',
       Address: '278 Spring Rd',
       Postal_Code: '94104',
-      Description: 'In the heart of San Francisco\'s financial district, the Residence is an all-suite hotel with a professional staff, manicured lawns and immaculate hotel rooms. Choose the Residence when you want the best and will not settle for anything less.',
       Hotel_Class: 'Gold',
       City: 'San Francisco',
       Price: 299,
@@ -1094,7 +1054,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'City Lights Inn',
       Address: '278 Market St',
       Postal_Code: '94104',
-      Description: 'Everyone at the City Lights Inn takes great pride in serving our guests. From our parking attendants to our management team, we will do everything we can to make your stay in San Francisco a memorable one. Join us and let us serve you in style.',
       Hotel_Class: 'Gold',
       City: 'San Francisco',
       Price: 299,
@@ -1121,7 +1080,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'Sunset Hotel',
       Address: '282 Fishermans Rd',
       Postal_Code: '94102',
-      Description: 'Built in 2007, the newest hotel in Fisherman\'s Wharf is the Sunset. With large rooms, manicured gardens and a friendly staff, you\'ll experience everything San Francisco has to offer in style and luxury. Come stay with us at the Sunset Hotel.',
       Hotel_Class: 'Diamond',
       City: 'San Francisco',
       Price: 299,
@@ -1148,7 +1106,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'The Grand Resort',
       Address: '5772 1st Street',
       Postal_Code: '94104',
-      Description: 'When opulance is your desire and when you only want the best in dining, shopping and guest room options, then choose the Grant Resort in downtown San Francisco. We cater to both the business and leisure traveller so please join us on your next visit.',
       Hotel_Class: 'Platinum',
       City: 'San Francisco',
       Price: 499,
@@ -1175,7 +1132,6 @@ export class ConsultaComponent implements OnInit {
       Hotel_Name: 'Golden Gate Hotel',
       Address: '6222 Bridge Rd',
       Postal_Code: '94102',
-      Description: 'At the Golden Gate, we welcome you to the Golden State with open arms and strive to make your stay in San Francisco a memorable one. We wil do everything we can to make sure you have fun in the city and to earn your business year after year. Stay with us.',
       Hotel_Class: 'Diamond',
       City: 'San Francisco',
       Price: 199,
@@ -1200,20 +1156,289 @@ export class ConsultaComponent implements OnInit {
     }];
   dataSource: any;
 
+  House = [{
+    ID: 1,
+    Nombre: 'Evento 1',
+    Entrada: 'General',
+    Address: '652 Avonwick Gate',
+    City: 'Toronto',
+    State: 'ON',
+    ZipCode: 'M3A25',
+    Price: 7.000,
+    Image: '../assets/img/1.jpg'
+  },
+    {
+      ID: 2,
+      Nombre: 'Evento 2',
+      Entrada: 'General',
+      Address: '82649 Topeka St',
+      City: 'Riverbank',
+      State: 'CA',
+      ZipCode: '95360',
+      Price: 1750000,
+      Image: '../assets/img//2.jpg'
+    },
+    {
+      ID: 3,
+      Nombre: 'Evento 3',
+      Entrada: 'General',
+      Address: '328 S Kerema Ave',
+      City: 'Milford',
+      State: 'CT',
+      ZipCode: '06465',
+      Price: 350000,
+      Image: '../assets/img/3.jpg'
+    },
+    {
+      ID: 4,
+      Nombre: 'Evento 4',
+      Entrada: 'General',
+      Address: '5119 Beryl Dr',
+      City: 'San Antonio',
+      State: 'TX',
+      ZipCode: '78212',
+      Price: 455000,
+      Image: '../assets/img/4.jpg'
+    },
+    {
+      ID: 5,
+      Nombre: 'Evento 5',
+      Entrada: 'General',
+      Address: '61207 16th St N',
+      City: 'Moorhead',
+      State: 'MN',
+      ZipCode: '56564',
+      Price: 1700000,
+      Image: '../assets/img/5.jpg'
+    },
+    {
+      ID: 6,
+      Nombre: 'Evento 6',
+      Entrada: 'General',
+      Address: '8512 Tanglewood Cir',
+      City: 'Reform',
+      State: 'AL',
+      ZipCode: '35487',
+      Price: 250000,
+      Image: '../assets/img/6.jpg'
+    },
+    {
+      ID: 7,
+      Nombre: 'Evento 7',
+      Entrada: 'General',
+      Address: '7121 Bailey St',
+      City: 'Worcester',
+      State: 'MA',
+      ZipCode: '01605',
+      Price: 555000,
+      Image: '../assets/img/7.jpg'
+    },
+    {
+      ID: 8,
+      Nombre: 'Evento 8',
+      Entrada: 'General',
+      Address: '620201 Plymouth Rd',
+      City: 'Detroit',
+      State: 'MI',
+      ZipCode: ' 48224',
+      Price: 610000,
+      Image: '../assets/img/8.jpg'
+    },
+    {
+      ID: 9,
+      Nombre: 'Evento 9',
+      Entrada: 'General',
+      Address: '1198 Theresa Cir',
+      City: 'Whitinsville',
+      State: 'MA',
+      ZipCode: '01582',
+      Price: 320000,
+      Image: '../assets/img/9.jpg'
+    }];
+
+  House2 = [{
+    ID: 1,
+    Nombre: 'Evento 1',
+    Entrada: 'General',
+    Address: '652 Avonwick Gate',
+    City: 'Toronto',
+    State: 'ON',
+    ZipCode: 'M3A25',
+    Price: 7.000,
+    Image: '../assets/img/1.jpg'
+  },
+    {
+      ID: 2,
+      Address: '82649 Topeka St',
+      City: 'Riverbank',
+      State: 'CA',
+      ZipCode: '95360',
+      Price: 1750000,
+      Image: '../assets/img//2.jpg'
+    },
+    {
+      ID: 3,
+      Address: '328 S Kerema Ave',
+      City: 'Milford',
+      State: 'CT',
+      ZipCode: '06465',
+      Price: 350000,
+      Image: '../assets/img/3.jpg'
+    },
+    {
+      ID: 4,
+      Address: '5119 Beryl Dr',
+      City: 'San Antonio',
+      State: 'TX',
+      ZipCode: '78212',
+      Price: 455000,
+      Image: '../assets/img/4.jpg'
+    },
+    {
+      ID: 5,
+      Address: '61207 16th St N',
+      City: 'Moorhead',
+      State: 'MN',
+      ZipCode: '56564',
+      Price: 1700000,
+      Image: '../assets/img/5.jpg'
+    },
+    {
+      ID: 6,
+      Address: '8512 Tanglewood Cir',
+      City: 'Reform',
+      State: 'AL',
+      ZipCode: '35487',
+      Price: 250000,
+      Image: '../assets/img/6.jpg'
+    },
+    {
+      ID: 7,
+      Address: '7121 Bailey St',
+      City: 'Worcester',
+      State: 'MA',
+      ZipCode: '01605',
+      Price: 555000,
+      Image: '../assets/img/7.jpg'
+    },
+    {
+      ID: 8,
+      Address: '620201 Plymouth Rd',
+      City: 'Detroit',
+      State: 'MI',
+      ZipCode: ' 48224',
+      Price: 610000,
+      Image: '../assets/img/8.jpg'
+    },
+    {
+      ID: 9,
+      Address: '1198 Theresa Cir',
+      City: 'Whitinsville',
+      State: 'MA',
+      ZipCode: '01582',
+      Price: 320000,
+      Image: '../assets/img/9.jpg'
+    }];
+
+  Employee = [{
+    Full_Name: 'John Heart',
+    Title: 'CEO',
+    Birth_Date: '03/16/1964',
+    Prefix: 'Mr.',
+    Address: '351 S Hill St.',
+    City: 'Los Angeles',
+    Zipcode: 90013,
+    Email: 'jheart@dx-email.com',
+    Skype: 'jheart_DX_skype',
+    Home_Phone: '(213) 555-9208',
+    Mobile_Phone: '(213) 555-9392'
+  }];
+
+  Marker = [{
+    location: [40.755833, -73.986389],
+    tooltip: {
+      isShown: false,
+      text: 'Times Square'
+    }
+  }, {
+    location: '40.7825, -73.966111',
+    tooltip: {
+      isShown: false,
+      text: 'Central Park'
+    }
+  }, {
+    location: {
+      lat: 40.753889,
+      lng: -73.981389
+    },
+    tooltip: {
+      isShown: false,
+      text: 'Fifth Avenue'
+    }
+  }, {
+    location: 'Brooklyn Bridge,New York,NY',
+    tooltip: {
+      isShown: false,
+      text: 'Brooklyn Bridge'
+    }
+  }];
+
+  employeeInfo = {
+    Birth_Date: 'hola',
+    City: 'hola',
+    Zipcode: 'hola',
+    Address: 'hola',
+    Mobile_Phone: 'hola',
+    Email: 'hola',
+  };
+
+  markerUrl = 'https://js.devexpress.com/Demos/RealtorApp/images/map-marker.png';
+
+  markers: any[] = [{
+    location: [40.755833, -73.986389],
+    tooltip: {
+      isShown: false,
+      text: 'Times Square'
+    }
+  }, {
+    location: '40.7825, -73.966111',
+    tooltip: {
+      isShown: false,
+      text: 'Central Park'
+    }
+  }, {
+    location: {
+      lat: 40.753889,
+      lng: -73.981389
+    },
+    tooltip: {
+      isShown: false,
+      text: 'Fifth Avenue'
+    }
+  }, {
+    location: 'Brooklyn Bridge,New York,NY',
+    tooltip: {
+      isShown: false,
+      text: 'Brooklyn Bridge'
+    }
+  }];
+
   listSelectionChanged = (e) => {
     console.log(e);
     this.currentHotel = e.addedItems[0];
   }
 
-  constructor() { this.dataSource = new DataSource({
-    store: new ArrayStore({
-      data: this.Hotel,
-      key: 'Id'
-    }),
-    group: 'City',
-    searchExpr: ['Hotel_Name', 'City', 'Address']
-  });
-    this.currentHotel = this.Hotel[0]; }
+  constructor() {
+    this.dataSource = new DataSource({
+      store: new ArrayStore({
+        data: this.Hotel,
+        key: 'Id'
+      }),
+      group: 'City',
+      searchExpr: ['Hotel_Name', 'City', 'Address']
+    });
+    this.currentHotel = this.Hotel[0];
+  }
 
   ngOnInit() {
   }
