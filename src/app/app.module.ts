@@ -18,7 +18,6 @@ import {NbChatModule, NbLayoutModule, NbThemeModule} from '@nebular/theme';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NbEvaIconsModule} from '@nebular/eva-icons';
 import {MatStepperModule} from '@angular/material';
-import { ConsultaComponent } from './pages/content/compras/consulta/consulta.component';
 
 firebase.initializeApp(environment.firebase);
 
@@ -26,8 +25,7 @@ firebase.initializeApp(environment.firebase);
   declarations: [
     AppComponent,
     MainComponent,
-    SesionComponent,
-    ConsultaComponent
+    SesionComponent
   ],
   imports: [
     HttpClientModule,

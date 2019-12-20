@@ -1,3 +1,10 @@
+@import '../../themes';
+
+@import '~@nebular/theme/styles/globals';
+
+@include nb-install() {
+  @include nb-theme-global();
+};
 /*!
 
 =========================================================
@@ -13,7 +20,6 @@
 =========================================================
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
 */
 
 @import 'paper-dashboard/variables';

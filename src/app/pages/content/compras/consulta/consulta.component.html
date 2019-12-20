@@ -1,4 +1,3 @@
-
 <div class="div-table">
   <dx-list
     class="list"
@@ -7,8 +6,7 @@
     [searchEnabled]="true"
     selectionMode="single"
     [selectedItemKeys]="[currentHotel.Id]"
-    (onSelectionChanged)=listSelectionChanged($event)
-  >
+    (onSelectionChanged)=listSelectionChanged($event)>
     <div *dxTemplate="let item of 'item'">
       <div>
         <div class="hotel">
