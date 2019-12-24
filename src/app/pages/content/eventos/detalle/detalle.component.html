@@ -12,7 +12,18 @@
   </dx-gallery><br><br>
   <div class="row">
     <div class="update ml-auto mr-auto">
-      <button type="submit" class="btn btn-warning btn-round" (click)="Ver()">Enviar sugerencia</button>
+      <dx-button
+        id="button"
+        [height]="40"
+        [width]="140"
+        (onClick)="onClick($event)">
+        <div *dxTemplate="let data of 'content'">
+          <dx-load-indicator class='button-indicator'
+                             [visible]="loadIndicatorVisible">
+          </dx-load-indicator>
+          <span class='dx-button-text'>Enviar sugerencia</span>
+        </div>
+      </dx-button>
     </div>
   </div><br>
   <div id="employee">
@@ -47,91 +58,26 @@
     [markerIconSrc]="markerUrl"
     [markers]="markers"
   >
-  </dx-map>
+  </dx-map> <br><br>
 
   <div class="row">
     <div class="update ml-auto mr-auto">
-      <button type="submit" class="btn btn-warning btn-round" (click)="Ver()">Entradas</button>
+      <dx-button
+        id="button"
+        [height]="40"
+        [width]="140"
+        (onClick)="onClick($event)">
+        <div *dxTemplate="let data of 'content'">
+          <dx-load-indicator class='button-indicator'
+                             [visible]="loadIndicatorVisible">
+          </dx-load-indicator>
+          <span class='dx-button-text'>Entradas</span>
+        </div>
+      </dx-button>
     </div>
   </div><br>
 </div>
 
-<div class="div-table">
-  <div class="options">
-    <div class="option">
-      <dx-check-box
-        text="VIP"
-        [(value)]="allowDeleting">
-      </dx-check-box>
-    </div><br>
-    <div class="option">
-      <span>Precio:</span>
-      <dx-number-box
-        [max]="550"
-        [disabled]="true"
-        [(value)]="width"></dx-number-box>
-      <span>Seleccione cantidad:</span>
-      <dx-number-box
-        [max]="550"
-        [(value)]="width"></dx-number-box>
-    </div><br>
-    <div class="option">
-      <dx-check-box
-        text="Galeria"
-        [(value)]="allowDeleting">
-      </dx-check-box>
-    </div><br>
-    <div class="option">
-      <span>Precio:</span>
-      <dx-number-box
-        [max]="550"
-        [disabled]="true"
-        [(value)]="width"></dx-number-box>
-      <span>Seleccione cantidad:</span>
-      <dx-number-box
-        [max]="550"
-        [(value)]="width"></dx-number-box>
-    </div><br>
-    <div class="option">
-      <dx-check-box
-        text="Platea"
-        [(value)]="allowDeleting">
-      </dx-check-box>
-    </div><br>
-    <div class="option">
-      <span>Precio:</span>
-      <dx-number-box
-        [max]="550"
-        [disabled]="true"
-        [(value)]="width"></dx-number-box>
-      <span>Seleccione cantidad:</span>
-      <dx-number-box
-        [max]="550"
-        [(value)]="width"></dx-number-box>
-    </div><br>
-    <span>Total:</span>
-    <dx-number-box
-      [max]="550"
-      [disabled]="true"
-      [(value)]="width"></dx-number-box>
-  </div>
-  <div class="dx-fieldset">
-    <div class="dx-field">
-      <div class="dx-field-label">Seleccione medio de pago</div>
-      <div class="dx-field-value">
-        <dx-radio-group
-          [items]="priorities"
-          [value]="priorities[0]">
-        </dx-radio-group>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="update ml-auto mr-auto">
-      <button type="submit" class="btn btn-warning btn-round" (click)="Ver()">Comprar</button>
-    </div>
-  </div><br>
-</div>
 <div class="div-table">
   <div class="Iencabezado">
     Sugerencia
@@ -147,7 +93,137 @@
   </dx-form>
   <div class="row">
     <div class="update ml-auto mr-auto">
-      <button type="submit" class="btn btn-warning btn-round" (click)="Ver()">Enviar</button>
+      <dx-button
+        id="button"
+        [height]="40"
+        [width]="140"
+        (onClick)="onClick($event)">
+        <div *dxTemplate="let data of 'content'">
+          <dx-load-indicator class='button-indicator'
+                             [visible]="loadIndicatorVisible">
+          </dx-load-indicator>
+          <span class='dx-button-text'>Enviar</span>
+        </div>
+      </dx-button>
     </div>
   </div><br>
+</div>
+<div class="div-table">
+  <mat-horizontal-stepper>
+    <mat-step label="Entradas">
+      <div class="options">
+        <div class="option">
+          <dx-check-box
+            text="VIP"
+            [(value)]="allowDeleting">
+          </dx-check-box>
+        </div><br>
+        <div class="option">
+          <span>Precio:</span>
+          <dx-number-box
+            [max]="550"
+            [disabled]="true"
+            [(value)]="width"></dx-number-box>
+          <span>Seleccione cantidad:</span>
+          <dx-number-box
+            [max]="550"
+            [(value)]="width"></dx-number-box>
+        </div><br>
+        <div class="option">
+          <dx-check-box
+            text="Galeria"
+            [(value)]="allowDeleting">
+          </dx-check-box>
+        </div><br>
+        <div class="option">
+          <span>Precio:</span>
+          <dx-number-box
+            [max]="550"
+            [disabled]="true"
+            [(value)]="width"></dx-number-box>
+          <span>Seleccione cantidad:</span>
+          <dx-number-box
+            [max]="550"
+            [(value)]="width"></dx-number-box>
+        </div><br>
+        <div class="option">
+          <dx-check-box
+            text="Platea"
+            [(value)]="allowDeleting">
+          </dx-check-box>
+        </div><br>
+        <div class="option">
+          <span>Precio:</span>
+          <dx-number-box
+            [max]="550"
+            [disabled]="true"
+            [(value)]="width"></dx-number-box>
+          <span>Seleccione cantidad:</span>
+          <dx-number-box
+            [max]="550"
+            [(value)]="width"></dx-number-box>
+        </div><br>
+        <span>Total:</span>
+        <dx-number-box
+          [max]="550"
+          [disabled]="true"
+          [(value)]="width"></dx-number-box>
+      </div>
+      <div>
+        <button mat-button matStepperNext class="btn btn-warning">Siguiente</button>
+      </div>
+    </mat-step>
+    <mat-step label="Asignar entradas">
+      <div id="form-container">
+        <dx-form id="form"
+                 [formData]="employee">
+          <dxi-item itemType="group" caption="Entrada 1">
+            <dxi-item dataField="RUT"  caption="Ingrese RUT"></dxi-item>
+            <dxi-item dataField="Nombre" caption="Ingrese su nombre"></dxi-item>
+            <dxi-item dataField="Apellido"  caption="Ingrese su apellido"></dxi-item>
+            <dxi-item dataField="Email" caption="Ingrese correo"></dxi-item>
+          </dxi-item>
+          <dxi-item itemType="group" caption="Entrada 2">
+            <dxi-item dataField="RUT"  caption="Ingrese RUT"></dxi-item>
+            <dxi-item dataField="Nombre" caption="Ingrese su nombre"></dxi-item>
+            <dxi-item dataField="Apellido"  caption="Ingrese su apellido"></dxi-item>
+            <dxi-item dataField="Email" caption="Ingrese correo"></dxi-item>
+          </dxi-item>
+        </dx-form>
+      </div>
+      <div>
+        <button mat-button matStepperPrevious class="btn btn-outline-warning">Anterior</button>
+        <button mat-button matStepperNext class="btn btn-warning">Siguiente</button>
+      </div>
+    </mat-step>
+
+    <mat-step label="Medio de pago">
+      <div class="dx-fieldset">
+        <div class="dx-field">
+          <div class="dx-field-label">Seleccione medio de pago</div>
+          <div class="dx-field-value">
+            <dx-radio-group
+              [items]="priorities"
+              [value]="priorities[0]">
+            </dx-radio-group>
+          </div>
+        </div>
+      </div>
+      <div>
+        <button mat-button matStepperPrevious class="btn btn-outline-warning">Anterior</button>
+        <dx-button
+          id="button"
+          [height]="40"
+          [width]="140"
+          (onClick)="onClick($event)">
+          <div *dxTemplate="let data of 'content'">
+            <dx-load-indicator class='button-indicator'
+                               [visible]="loadIndicatorVisible">
+            </dx-load-indicator>
+            <span class='dx-button-text'>Comprar</span>
+          </div>
+        </dx-button>
+      </div>
+    </mat-step>
+  </mat-horizontal-stepper>
 </div>

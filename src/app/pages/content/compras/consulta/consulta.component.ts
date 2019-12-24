@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import DataSource from "devextreme/data/data_source";
 import ArrayStore from "devextreme/data/array_store";
+import notify from "devextreme/ui/notify";
 
 @Component({
   selector: 'app-consulta',
@@ -1167,6 +1168,47 @@ export class ConsultaComponent implements OnInit {
     });
     this.currentHotel = this.Hotel[0];
   }
+
+  buttonText = "Ir";
+  loadIndicatorVisible = false;
+
+  onClick(data){
+    this.buttonText = "Ir";
+    this.loadIndicatorVisible = true;
+    notify('Se ha guardado con exito.');
+    setTimeout(() => {
+      this.buttonText = "Ir";
+      this.loadIndicatorVisible = false;
+      notify('Ha ocurrido un error');
+    }, 2000);
+  }
+
+
+  employee = [{
+    ID: 1,
+    RUT: "11.111.111-1",
+    Nombre: "Heart",
+    Apellido: "Super",
+    Email: "prueba@prueba.cl",
+    Precio:"7.000",
+  }]
+
+  employeed = [{
+    ID: 1,
+    RUT: "11.111.111-1",
+    Nombre: "Heart",
+    Apellido: "Super",
+    Email: "prueba@prueba.cl",
+  }]
+
+  employeedInfo = {
+    Fecha: '01-02-2019',
+    Nombre: 'Evento 1',
+    Entrada2: 'Platea',
+    Valor2: '10.000',
+    Ubicacion: 'Calle 1',
+    Descripcion: 'Evento 2',
+  };
 
   ngOnInit() {
   }

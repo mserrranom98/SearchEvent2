@@ -234,6 +234,19 @@ export class DetalleComponent implements OnInit {
     }
   }];
 
+  buttonText = "Ir";
+  loadIndicatorVisible = false;
+
+  onClick(data){
+    this.buttonText = "Ir";
+    this.loadIndicatorVisible = true;
+
+    setTimeout(() => {
+      this.buttonText = "Ir";
+      this.loadIndicatorVisible = false;
+    }, 2000);
+  }
+
   employeeInfo = {
     Fecha: '01-02-2019',
     Entrada: 'General',
@@ -243,6 +256,19 @@ export class DetalleComponent implements OnInit {
     Direccion: 'Calle 1',
     Descripcion: 'Evento 2',
   };
+
+  employee = [{
+    ID: 1,
+    FirstName: "John",
+    LastName: "Heart",
+    Position: "CEO",
+    BirthDate: "1964/03/16",
+    HireDate: "1995/01/15",
+    Notes: "John has been in the Audio/Video industry since 1990. He has led DevAv as its CEO since 2003.\r\n\r\nWhen not working hard as the CEO, John loves to golf and bowl. He once bowled a perfect game of 300.",
+    Address: "351 S Hill St., Los Angeles, CA",
+    Phone: "360-684-1334",
+    Email: "jheart@dx-email.com"
+}]
 
   priorities = [{
     subject: 'Choose between PPO and HMO Health Plan',

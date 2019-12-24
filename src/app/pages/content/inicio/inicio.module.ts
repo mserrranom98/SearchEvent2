@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { InicioRoutingModule } from './inicio-routing.module';
 import { ConsultaComponent } from './consulta/consulta.component';
-import {DxAccordionModule, DxButtonModule, DxGalleryModule} from "devextreme-angular";
+import {DxAccordionModule, DxButtonModule, DxGalleryModule, DxLoadIndicatorModule} from "devextreme-angular";
 
 
 @NgModule({
@@ -14,6 +14,7 @@ import {DxAccordionModule, DxButtonModule, DxGalleryModule} from "devextreme-ang
     DxGalleryModule,
     DxButtonModule,
     DxAccordionModule,
+    DxLoadIndicatorModule
   ]
 })
 export class InicioModule { }

@@ -13,10 +13,140 @@
           <div class="name">{{item.Hotel_Name}}</div>
           <div class="address">{{item.Postal_Code + ', ' + item.Address}}</div>
         </div>
+        <div class="price-container">
+          <div class="row justify-content-end">
+            <dx-button
+              id="button"
+              [height]="40"
+              [width]="40"
+              (onClick)="onClick($event)">
+              <div *dxTemplate="let data of 'content'">
+                <dx-load-indicator class='button-indicator'
+                                   [visible]="loadIndicatorVisible">
+                </dx-load-indicator>
+                <span class='dx-button-text'>{{buttonText}}</span>
+              </div>
+            </dx-button>
+          </div>
+          <div class="row justify-content-end">
+            Total
+          </div>
+        </div>
       </div>
     </div>
     <div *dxTemplate="let item of 'group'">
       <div class="city">{{item.key}}</div>
     </div>
   </dx-list>
+</div>
+
+<div class="div-table">
+  <div class="Iencabezado">
+    Detalle de entradas
+  </div><br>
+  <div id="employeed">
+    <p>
+      Nombre del evento: <b>{{employeedInfo.Nombre}}</b><br/>
+      Fecha: <b>{{employeedInfo.Fecha}}</b><br/>
+      Direccion:
+      <b>{{employeedInfo.Direccion}}</b><br/></p>
+    <hr>
+    <p>
+      Descripcion: <b>{{employeedInfo.Descripcion}}</b>
+    </p>
+    <hr>
+    <div class="Iencabezado">
+      Ubicacion
+    </div><br>
+  </div>
+  <div class="update ml-auto mr-auto">
+    <dx-button
+      id="button"
+      [height]="40"
+      [width]="100"
+      (onClick)="onClick($event)">
+      <div *dxTemplate="let data of 'content'">
+        <dx-load-indicator class='button-indicator'
+                           [visible]="loadIndicatorVisible">
+        </dx-load-indicator>
+        <span class='dx-button-text'>Ir a evento</span>
+      </div>
+    </dx-button>
+  </div><br>
+<div id="form-container">
+  <dx-form id="form"
+           [formData]="employee">
+    <dxi-item itemType="group" caption="Entrada 1">
+      <dxi-item dataField="RUT"  [disabled]="true"></dxi-item>
+      <dxi-item dataField="Nombre" [disabled]="true"></dxi-item>
+      <dxi-item dataField="Apellido" [disabled]="true"></dxi-item>
+      <dxi-item dataField="Email"[disabled]="true"></dxi-item>
+      <dxi-item dataField="Precio"[disabled]="true"></dxi-item>
+    </dxi-item>
+  </dx-form>
+    <div class="update ml-auto mr-auto">
+      <dx-button
+        id="button"
+        [height]="40"
+        [width]="140"
+        (onClick)="onClick($event)">
+        <div *dxTemplate="let data of 'content'">
+          <dx-load-indicator class='button-indicator'
+                             [visible]="loadIndicatorVisible">
+          </dx-load-indicator>
+          <span class='dx-button-text'>Asignar entrada</span>
+        </div>
+      </dx-button>
+      <dx-button
+        id="button"
+        [height]="40"
+        [width]="180"
+        (onClick)="onClick($event)">
+        <div *dxTemplate="let data of 'content'">
+          <dx-load-indicator class='button-indicator'
+                             [visible]="loadIndicatorVisible">
+          </dx-load-indicator>
+          <span class='dx-button-text'>Enviar codigo por correo</span>
+        </div>
+      </dx-button>
+    </div><br><br>
+    <dx-form id="form"
+             [formData]="employee">
+    <dxi-item itemType="group" caption="Entrada 2">
+      <dxi-item dataField="RUT" [disabled]="true"></dxi-item>
+      <dxi-item dataField="Nombre" [disabled]="true"></dxi-item>
+      <dxi-item dataField="Apellido"  [disabled]="true"></dxi-item>
+      <dxi-item dataField="Email" [disabled]="true"></dxi-item>
+      <dxi-item dataField="Precio"  [disabled]="true"></dxi-item>
+    </dxi-item>
+    </dx-form>
+    <div class="update ml-auto mr-auto">
+      <dx-button
+        id="button"
+        [height]="40"
+        [width]="140"
+        (onClick)="onClick($event)">
+        <div *dxTemplate="let data of 'content'">
+          <dx-load-indicator class='button-indicator'
+                             [visible]="loadIndicatorVisible">
+          </dx-load-indicator>
+          <span class='dx-button-text'>Asignar entrada</span>
+        </div>
+      </dx-button>
+      <dx-button
+        id="button"
+        [height]="40"
+        [width]="180"
+        (onClick)="onClick($event)">
+        <div *dxTemplate="let data of 'content'">
+          <dx-load-indicator class='button-indicator'
+                             [visible]="loadIndicatorVisible">
+          </dx-load-indicator>
+          <span class='dx-button-text'>Enviar codigo por correo</span>
+        </div>
+      </dx-button>
+    </div>
+
+</div>
+
 </div>

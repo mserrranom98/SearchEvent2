@@ -1,4 +1,10 @@
 <div class="div-table">
+  <div class="dx-field">
+    <div class="dx-field-label">Categorias</div>
+    <div class="dx-field-value">
+      <dx-select-box [items]="simpleProducts"></dx-select-box> <br><br>
+    </div>
+  </div>
 <dx-list
       class="list"
       [dataSource]="dataSource"
@@ -13,6 +19,22 @@
           <div class="hotel">
             <div class="name">{{item.Hotel_Name}}</div>
             <div class="address">{{item.Postal_Code + ', ' + item.Address}}</div>
+          </div>
+        </div>
+        <div class="price-container">
+          <div class="row justify-content-end">
+            <dx-button
+              id="button"
+              [height]="40"
+              [width]="40"
+              (onClick)="onClick($event)">
+              <div *dxTemplate="let data of 'content'">
+                <dx-load-indicator class='button-indicator'
+                                   [visible]="loadIndicatorVisible">
+                </dx-load-indicator>
+                <span class='dx-button-text'>Ir</span>
+              </div>
+            </dx-button>
           </div>
         </div>
       </div>

@@ -20,9 +20,16 @@
         <div class="item-address">{{galleryItem.Address + ', ' + galleryItem.City}}
         </div>
         <dx-button
-          class="button-info"
-          text="Ver mas"
-          (onClick)="Ver()">
+          id="button"
+          [height]="40"
+          [width]="140"
+          (onClick)="onClick($event)">
+          <div *dxTemplate="let data of 'content'">
+            <dx-load-indicator class='button-indicator'
+                               [visible]="loadIndicatorVisible">
+            </dx-load-indicator>
+            <span class='dx-button-text'>Ver mas</span>
+          </div>
         </dx-button>
       </div>
     </div>
@@ -49,9 +56,16 @@
         <div class="item-address">{{galleryItem.Address + ', ' + galleryItem.City}}
         </div>
         <dx-button
-          class="button-info"
-          text="Ver mas"
-          (onClick)="Ver()">
+          id="button"
+          [height]="40"
+          [width]="140"
+          (onClick)="onClick($event)">
+          <div *dxTemplate="let data of 'content'">
+            <dx-load-indicator class='button-indicator'
+                               [visible]="loadIndicatorVisible">
+            </dx-load-indicator>
+            <span class='dx-button-text'>Ver mas...</span>
+          </div>
         </dx-button>
       </div>
     </div>

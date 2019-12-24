@@ -3,7 +3,14 @@ import { CommonModule } from '@angular/common';
 
 import { ComprasRoutingModule } from './compras-routing.module';
 import { ConsultaComponent } from './consulta/consulta.component';
-import {DxButtonModule, DxListModule, DxTileViewModule} from 'devextreme-angular';
+import {
+  DxActionSheetModule,
+  DxButtonModule,
+  DxFormModule,
+  DxListModule,
+  DxLoadIndicatorModule,
+  DxTileViewModule
+} from 'devextreme-angular';
 
 
 @NgModule({
@@ -13,7 +20,10 @@ import {DxButtonModule, DxListModule, DxTileViewModule} from 'devextreme-angular
     ComprasRoutingModule,
     DxTileViewModule,
     DxButtonModule,
-    DxListModule
+    DxListModule,
+    DxLoadIndicatorModule,
+    DxActionSheetModule,
+    DxFormModule
   ]
 })
 export class ComprasModule { }

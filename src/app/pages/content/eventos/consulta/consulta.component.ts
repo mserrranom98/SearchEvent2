@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import DataSource from 'devextreme/data/data_source';
 import ArrayStore from 'devextreme/data/array_store';
+import notify from "devextreme/ui/notify";
 
 @Component({
   selector: 'app-consulta',
@@ -1389,6 +1390,14 @@ export class ConsultaComponent implements OnInit {
   }
   ];
 
+  simpleProducts  = [
+    "Ferias y exhibiciones",
+    "Congresos y convenciones",
+    "Sociales",
+    "Conciertos",
+    "Catering",
+  ];
+
   employeeInfo = {
     Birth_Date: 'hola',
     City: 'hola',
@@ -1451,6 +1460,17 @@ export class ConsultaComponent implements OnInit {
   ngOnInit() {
   }
 
-  Ver() {
+  buttonText = "Ir";
+  loadIndicatorVisible = false;
+
+  onClick(data){
+    this.buttonText = "Ir";
+    this.loadIndicatorVisible = true;
+    notify('Se ha guardado con exito.');
+    setTimeout(() => {
+      this.buttonText = "Ir";
+      this.loadIndicatorVisible = false;
+      notify('Ha ocurrido un error');
+    }, 2000);
   }
 }

@@ -1,1 +1,65 @@
-<p>consulta works!</p>
+<div class="div-table">
+<div id="form-container">
+  <dx-form id="form"
+           [formData]="employee">
+    <dxi-item itemType="group" caption="Perfil">
+      <dxi-item dataField="Nombre"></dxi-item>
+      <dxi-item dataField="Apellido"></dxi-item>
+      <dxi-item dataField="Correo"></dxi-item>
+      <dxi-item dataField="Contraseña"></dxi-item>
+    </dxi-item>
+  </dx-form>
+  <div class="update ml-auto mr-auto">
+    <dx-button
+      id="button"
+      [height]="40"
+      [width]="180"
+      (onClick)="onClick($event)">
+      <div *dxTemplate="let data of 'content'">
+        <dx-load-indicator class='button-indicator'
+                           [visible]="loadIndicatorVisible">
+        </dx-load-indicator>
+        <span class='dx-button-text'>Modificar contraseña</span>
+      </div>
+    </dx-button>
+  </div>
+</div>
+
+  <div id="form-container">
+    <dx-form id="form"
+             [formData]="employee">
+      <dxi-item itemType="group" caption="Cambiar contraseña">
+        <dxi-item dataField="Ingrese contraseña" caption="Contraseña"></dxi-item>
+        <dxi-item dataField="Repita contraseña" caption="RContraseña"></dxi-item>
+      </dxi-item>
+    </dx-form>
+    <div class="update ml-auto mr-auto">
+      <dx-button
+        id="button"
+        [height]="40"
+        [width]="140"
+        (onClick)="onClick($event)">
+        <div *dxTemplate="let data of 'content'">
+          <dx-load-indicator class='button-indicator'
+                             [visible]="loadIndicatorVisible">
+          </dx-load-indicator>
+          <span class='dx-button-text'>Cancelar</span>
+        </div>
+      </dx-button>
+      <dx-button
+        id="button"
+        [height]="40"
+        [width]="140"
+        (onClick)="onClick($event)">
+        <div *dxTemplate="let data of 'content'">
+          <dx-load-indicator class='button-indicator'
+                             [visible]="loadIndicatorVisible">
+          </dx-load-indicator>
+          <span class='dx-button-text'>Guardar</span>
+        </div>
+      </dx-button>
+    </div>
+  </div>
+</div>
+
+

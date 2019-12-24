@@ -7,11 +7,12 @@ import {
   DxAccordionModule,
   DxButtonModule, DxCheckBoxModule, DxFormModule,
   DxGalleryModule,
-  DxListModule,
-  DxMapModule, DxNumberBoxModule, DxRadioGroupModule, DxTextAreaModule,
+  DxListModule, DxLoadIndicatorModule,
+  DxMapModule, DxNumberBoxModule, DxRadioGroupModule, DxSelectBoxModule, DxTextAreaModule,
   DxTileViewModule
 } from "devextreme-angular";
 import { DetalleComponent } from './detalle/detalle.component';
+import {MatStepperModule} from "@angular/material";
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { DetalleComponent } from './detalle/detalle.component';
   imports: [
     CommonModule,
     EventosRoutingModule,
+    MatStepperModule,
     DxTileViewModule,
     DxButtonModule,
     DxGalleryModule,
@@ -27,9 +29,11 @@ import { DetalleComponent } from './detalle/detalle.component';
     DxGalleryModule,
     DxNumberBoxModule,
     DxFormModule,
+    DxLoadIndicatorModule,
     DxTextAreaModule,
     DxCheckBoxModule,
     DxListModule,
+    DxSelectBoxModule,
     DxRadioGroupModule
   ]
 })
