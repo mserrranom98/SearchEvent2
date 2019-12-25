@@ -18,6 +18,7 @@ import {NbChatModule, NbLayoutModule, NbThemeModule} from '@nebular/theme';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NbEvaIconsModule} from '@nebular/eva-icons';
 import {MatStepperModule} from '@angular/material';
+import {DxButtonModule, DxLoadIndicatorModule} from "devextreme-angular";
 
 firebase.initializeApp(environment.firebase);
 
@@ -44,6 +45,8 @@ firebase.initializeApp(environment.firebase);
     NbEvaIconsModule,
     BrowserAnimationsModule,
     MatStepperModule,
+    DxLoadIndicatorModule,
+    DxButtonModule,
     AngularFireAuthModule
   ],
   providers: [

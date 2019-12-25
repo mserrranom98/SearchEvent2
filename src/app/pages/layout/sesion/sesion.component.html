@@ -23,11 +23,18 @@
       </div>
     </div><br>
 
-    <div class="row">
-      <div class="update ml-auto mr-auto">
-        <button type="submit" class="btn btn-warning btn-round" (click)="login()">Ingresar</button>
+    <dx-button
+      id="button"
+      [height]="40"
+      [width]="140"
+      (onClick)="login()">
+      <div *dxTemplate="let data of 'content'">
+        <dx-load-indicator class='button-indicator'
+                           [visible]="loadIndicatorVisible">
+        </dx-load-indicator>
+        <span class='dx-button-text'>Ingresar</span>
       </div>
-    </div><br>
+    </dx-button><br><br>
 
     <div class="row">
       <div class="update ml-auto mr-auto">
